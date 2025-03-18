@@ -19,7 +19,7 @@ Use console.log() to clearly show the before-and-after type conversions.
 */
 
 
-let result = "5" - 2;
+let result = Number("5") - 2; // using the Number() function here allows me to convert the string into an integer value to perform arithmetic.
 console.log("The result is: " + result);
 
 let isValid = Boolean("false");
@@ -28,5 +28,14 @@ if (isValid) {
 }
 
 let age = "25";
-let totalAge = age + 5;
+let totalAge = Number(age) + 5; // again, using the Number() function on age changes the string value into an integer so that simple addition can occur. 
 console.log("Total Age: " + totalAge);
+
+let nombre = "Joshua"
+let outcome = " passed this selfpace"
+let time = 4
+let duration = " weeks."
+console.log(nombre + outcome + " in " + time + duration);
+
+let lady = null
+console.log(Boolean(lady)) // because the variable lady is valued at null, the console of the Boolean(lady) is going to output false (which is what I have).
